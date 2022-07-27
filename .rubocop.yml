@@ -4,6 +4,10 @@ AllCops:
   TargetRubyVersion: 3.1.2
   NewCops: enable
 
+Metrics/MethodLength:
+  Exclude:
+   - test/**/*.rb
+
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes

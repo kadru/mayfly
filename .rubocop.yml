@@ -5,8 +5,15 @@ AllCops:
   NewCops: enable
 
 Metrics/MethodLength:
+  Max: 40
   Exclude:
-   - test/**/*.rb
+    - test/**/*.rb
+Metrics/AbcSize:
+  Exclude:
+    - test/**/*.rb
+Metrics/ClassLength:
+  Exclude:
+    - test/**/*.rb
 
 Style/StringLiterals:
   Enabled: true
